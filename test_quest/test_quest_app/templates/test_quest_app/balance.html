@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Баланс</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'test_quest_app/css/balance.css' %}">
+</head>
+<body style="background-color:white; margin: 0">
+    <div class="content">
+
+            <div class="block1">
+                <p class="just_text1">Ваш баланс: {{dict_user.point_value}}  cat points</p>
+            </div>
+            <img src="{%static 'test_quest_app/img/cat.png'%}" style="width: 10%; margin-top: -90%; margin-left: 52.5%;">
+
+    </div>
+</body>
+</html>

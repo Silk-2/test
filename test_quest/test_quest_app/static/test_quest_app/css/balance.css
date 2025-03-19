@@ -1,0 +1,26 @@
+.content{
+    max-width: 1920px;
+    margin: auto;
+}
+
+.block1{
+
+display: block;
+width: 400px;
+height: 250px;
+border-radius: 15px;
+border: 10px solid black;
+text-align: center;
+padding: 40px;
+font-size: 25px;
+color: black;
+margin-top: 200px;
+margin-left: auto;
+margin-right: auto;
+background-color: green;}
+
+.just_text1{
+border-radius: 15px;
+background-color: LightGreen;
+padding:10px}
+

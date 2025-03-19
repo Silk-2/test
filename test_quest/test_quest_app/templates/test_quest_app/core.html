@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'test_quest_app/css/core.css' %}">
+</head>
+<body style="background-color:white; margin: 0">
+    <div class="content">
+        <img src="{%static 'test_quest_app/img/muzzle.png'%}" style="width: 10%; margin-left: 54%; margin-top: 5%">
+        <div class="block1">
+            <form method="post" class="box1">
+                {% csrf_token %}
+                    <div class="box2">
+                        <div style=""><p style="width: 210px; font-size: 25px; margin-top: 15%">Выберите действие</p></div>
+                        <div style="margin-left: 40%; margin-top: 10%">{{form.choise_value}}</div>
+                    </div>
+
+
+                    <div class="form-style">{{form.value}}</div>
+
+                <button type="submit" name="submitting_the_form" class="submitting_button">Осуществить операцию</button>
+
+            </form>
+
+        </div>
+        <img src="{%static 'test_quest_app/img/paws.png'%}" style="width: 10%; margin-left: 55%;">
+    </div>
+</body>
+</html>
